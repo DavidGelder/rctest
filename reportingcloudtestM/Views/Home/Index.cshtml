@@ -1,0 +1,30 @@
+﻿@model List<TXTextControl.ReportingCloud.Template>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All Templates</h2>
+
+<table>
+
+    <tr>
+        <th>Filename</th>
+        <th>Modified</th>
+    </tr>
+
+    @foreach (TXTextControl.ReportingCloud.Template template in Model)
+    {
+        <tr>
+            <td>@template.TemplateName</td>
+            <td>@template.Modified</td>
+        </tr>
+    }
+
+</table>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
